@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOTAMApplication.WebApi", "NOTAMApplication.WebApi\NOTAMApplication.WebApi.csproj", "{1AEA4CAD-9EF7-493D-B342-71BF29A61AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOTAMApplication.Services", "NOTAMApplication.Services\NOTAMApplication.Services.csproj", "{E0CEA47C-439C-4435-A425-D326360754B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOTAMApplication.DataAccess", "NOTAMApplication.DataAccess\NOTAMApplication.DataAccess.csproj", "{F9357680-7D5C-41AB-A0FD-BA363B3F30C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOTAMApplication.Common", "NOTAMApplication.Common\NOTAMApplication.Common.csproj", "{EF65A7CA-2C45-430A-BEF9-F00A717ACFF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AEA4CAD-9EF7-493D-B342-71BF29A61AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEA4CAD-9EF7-493D-B342-71BF29A61AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEA4CAD-9EF7-493D-B342-71BF29A61AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEA4CAD-9EF7-493D-B342-71BF29A61AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CEA47C-439C-4435-A425-D326360754B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CEA47C-439C-4435-A425-D326360754B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CEA47C-439C-4435-A425-D326360754B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CEA47C-439C-4435-A425-D326360754B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9357680-7D5C-41AB-A0FD-BA363B3F30C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9357680-7D5C-41AB-A0FD-BA363B3F30C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9357680-7D5C-41AB-A0FD-BA363B3F30C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9357680-7D5C-41AB-A0FD-BA363B3F30C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF65A7CA-2C45-430A-BEF9-F00A717ACFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF65A7CA-2C45-430A-BEF9-F00A717ACFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF65A7CA-2C45-430A-BEF9-F00A717ACFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF65A7CA-2C45-430A-BEF9-F00A717ACFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿global using Microsoft.Extensions.Logging;
+global using Newtonsoft.Json;
+global using NOTAMApplication.Common.Constants;
+global using NOTAMApplication.Services.Models.ResponseModels;
+global using Quartz;
+global using System.Text;
+global using Microsoft.Extensions.Options;
+global using NOTAMApplication.Services.Jobs;
+global using NOTAMApplication.Services.Services.Interfaces;
+global using NOTAMApplication.DataAccess.Entities;
+global using AutoMapper;
