@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace NOTAMApplication.Services.Services.Implementations;
+﻿namespace NOTAMApplication.Services.Services.Implementations;
 
 public class NOTAMServices : INOTAMServices
 {
@@ -13,15 +11,15 @@ public class NOTAMServices : INOTAMServices
         _dbContext = dbContext;
         _mapper = mapper;
     }
-    public async Task<List<NOTAMModel>> GetNOTAMByFacility(string facility)
+    public async Task<Result> GetNOTAMByFacility(string facility)
     {
         _logger.LogInformation(nameof(GetNOTAMByFacility));
         var response = new List<NOTAMModel>();
         if (!string.IsNullOrEmpty(facility))
         {
-            var nOTAMs = await _dbContext.NOTAMs.Where(x => x.FacilityDesignator.ToLower() == facility.ToLower()).ToListAsync();
+            var nOTAMs = await _dbContext.NOTAMs.Where(x => x.FacilityDesignator.ToLower() == facility.ToLower() && x.CollectDate == DateOnly.FromDateTime(DateTime.Now)).ToListAsync();
             _mapper.Map(nOTAMs, response);
         }
-        return response;
+        return Result.Success(response);
     }
 }

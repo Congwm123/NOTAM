@@ -1,4 +1,7 @@
-﻿namespace NOTAMApplication.WebApi.Controllers;
+﻿using Microsoft.AspNetCore.Authorization;
+using NOTAMApplication.Services.Results;
+
+namespace NOTAMApplication.WebApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -13,10 +16,13 @@ public class NOTAMController : ControllerBase
         _nOTAMServices = nOTAMServices;
     }
 
+    [Authorize]
     [HttpGet("search/{facility}")]
     public async Task<IActionResult> Get([FromRoute] string facility)
     {
-        var rs = await _nOTAMServices.GetNOTAMByFacility(facility);
-        return Ok(rs);
+        var result = await _nOTAMServices.GetNOTAMByFacility(facility);
+        return result.Match<IActionResult>(
+            onSuccess: () => Ok(result),
+            onFailure: error => BadRequest(error));
     }
 }

@@ -6,6 +6,7 @@ public class NOTAMDbContext : DbContext
 {
     public DbSet<CrawlJob> CrawlJobs { get; set; }
     public DbSet<NOTAM> NOTAMs { get; set; }
+    public DbSet<User> Users { get; set; }
 
     public NOTAMDbContext(DbContextOptions<NOTAMDbContext> options) : base(options) { }
 

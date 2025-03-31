@@ -2,5 +2,5 @@
 
 public interface INOTAMServices
 {
-    Task<List<NOTAMModel>> GetNOTAMByFacility(string facility);
+    Task<Result> GetNOTAMByFacility(string facility);
 }
